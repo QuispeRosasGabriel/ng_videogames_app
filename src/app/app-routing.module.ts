@@ -13,18 +13,6 @@ const routes: Routes = [
       import('./public/pages/home/home.module').then((m) => m.HomeModule),
   },
   {
-    path: 'admin',
-    loadChildren: () =>
-      import('./admin/pages/dashboard/dashboard.module').then(
-        (m) => m.DashboardModule
-      ),
-  },
-  {
-    path: 'admin/users',
-    loadChildren: () =>
-      import('./admin/pages/users/users.module').then((m) => m.UsersModule),
-  },
-  {
     path: 'contact',
     loadChildren: () =>
       import('./public/pages/contact/contact.module').then(
