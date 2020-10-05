@@ -8,18 +8,6 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'home',
-    loadChildren: () =>
-      import('./public/pages/home/home.module').then((m) => m.HomeModule),
-  },
-  {
-    path: 'contact',
-    loadChildren: () =>
-      import('./public/pages/contact/contact.module').then(
-        (m) => m.ContactModule
-      ),
-  },
-  {
     path: '**',
     redirectTo: 'home',
     pathMatch: 'full',
