@@ -10,12 +10,14 @@ const routes: Routes = [
       {
         path: '',
         loadChildren: () =>
-          import('./dashboard/dashboard.module').then((m) => m.DashboardModule),
+          import('./pages/dashboard/dashboard.module').then(
+            (m) => m.DashboardModule
+          ),
       },
       {
         path: 'users',
         loadChildren: () =>
-          import('./users/users.module').then((m) => m.UsersModule),
+          import('./pages/users/users.module').then((m) => m.UsersModule),
       },
     ],
   },
