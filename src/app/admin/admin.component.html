@@ -1,8 +1,8 @@
 <div class="d-flex" id="wrapper">
-  <app-admin-sidebar></app-admin-sidebar>
+  <app-admin-sidebar *ngIf="toggleValue"></app-admin-sidebar>
   <!-- Page Content -->
   <div id="page-content-wrapper">
-    <app-admin-header></app-admin-header>
+    <app-admin-header (toggleMenu)="toggle($event)"></app-admin-header>
 
     <div class="container-fluid">
       <app-admin-title></app-admin-title>
