@@ -8,14 +8,14 @@ const routes: Routes = [
     component: PublicComponent,
     children: [
       {
-        path: 'home',
+        path: '',
         loadChildren: () =>
-          import('./home/home.module').then((m) => m.HomeModule),
+          import('./pages/home/home.module').then((m) => m.HomeModule),
       },
       {
         path: 'contact',
         loadChildren: () =>
-          import('./contact/contact.module').then((m) => m.ContactModule),
+          import('./pages/contact/contact.module').then((m) => m.ContactModule),
       },
     ],
   },
